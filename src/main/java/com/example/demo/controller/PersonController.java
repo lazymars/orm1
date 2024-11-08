@@ -23,11 +23,12 @@ public class PersonController {
     PersonRepo repo;
     
     @PostMapping("/addPerson")
-    public void addPerson(@RequestBody Person person) {
+    public String addPerson(@RequestBody Person person) {
         
         logger.warn("___________________________________person:__________________________________");
         logger.warn(person.toString());
         repo.save(person);
+        return "item added successfully";
     }
     @GetMapping("/getpersonbyid")
     public String getPersonById(@RequestParam String id) {
