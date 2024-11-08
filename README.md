@@ -1,3 +1,4 @@
-پروژه را با دستور زیر اجرا کنید:
+run project with below command:
+
 <br />
 `./mvnw spring-boot:run`
